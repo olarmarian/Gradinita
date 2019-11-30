@@ -1,22 +1,139 @@
-.App {
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("./assets/background.jpg") no-repeat center;
+  background-size:cover;
+  z-index: -1000;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.router{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+}
+.ahref{
+  width: 20%;
 }
 
-.App-link {
-  color: #09d3ac;
+.hide{
+  display: none;
+}
+
+.main-btn{
+  width: 100%;
+  padding: 1em 1em;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px #888888;
+  margin: 1em 0;
+  cursor: pointer;
+  z-index: 1;
+  background: #ffffff;
+}
+
+.main-btn:hover{
+  background: cornflowerblue;
+
+}
+.main-btn i{
+  color: cornflowerblue;
+}
+.main-btn:hover i{
+  color: #ffffff;
+}
+
+.main-btn i{
+  font-size: 2rem;
+}
+
+.main-btn p{
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#vid{
+  width: 80em;
+  height: auto;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px #888888;
+}
+
+.grid-list div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.grid-list div img{
+  height: 10em;
+  width: 15em;
+  margin: 1em;
+}
+
+.btn-section{
+  display: flex;
+  justify-content:space-evenly
+}
+
+.home-btn{
+  display:flex;
+  justify-content:"center";
+  width:0%;
+  background:#fff;
+  border-radius:10px;
+  border:"1px solid #000";
+  color:cornflowerblue;
+  cursor:"pointer";
+  text-decoration:none;
+}
+
+@media screen and (max-width:700px){
+  .App{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width:1300px){
+  
+  .ahref{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-btn{
+    width: 90%;
+  }
+  .main-btn i{
+    font-size: 1.5rem;
+  }
+
+  .grid-list div{
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  #vid{
+    width:100%;
+    height: auto;
+  }
+
+  .btn-section{
+    flex-direction: column;
+    align-items: center;
+  }
 }
