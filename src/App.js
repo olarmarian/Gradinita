@@ -11,6 +11,7 @@ import { LearningPage } from './components/LearningPage';
 import { Numbers } from './components/Numbers';
 import { Addition } from './components/Addition';
 import { Substitution } from './components/Substitution';
+import { AdditionGame } from './components/AdditionGame';
 function App() {
   return (
     <div className="App">    
@@ -32,8 +33,7 @@ function App() {
             <Substitution/>
           </Route>
           <Route exact path="/game">
-            <div>
-            </div>
+            <AdditionGame/>
           </Route>  
         </div>
       </BrowserRouter>
