@@ -8,7 +8,9 @@ import {
 export const Substitution = () =>{
     return(
         <div>
-            <h1><Link className="home-btn" to="/">Acasa</Link></h1>
+                        <div className="home-btn">
+            <Button  icon="fas fa-home" route="/"/>
+            </div>
             <video id="vid" controls>
                 <source id="mp4" src={video} type="video/mp4"/>
             </video>

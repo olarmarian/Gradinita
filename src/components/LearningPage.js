@@ -6,6 +6,9 @@ import add from '../assets/addition.jpg'
 export const LearningPage = () =>{
     return(
         <div>
+                        <div className="home-btn">
+            <Button  icon="fas fa-home" route="/"/>
+            </div>
             <div className="grid-list">
                 <div className="section">
                     <img src={numbers} alt="numberz"/>

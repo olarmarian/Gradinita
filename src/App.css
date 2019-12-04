@@ -65,8 +65,8 @@
 }
 
 #vid{
-  width: 80em;
-  height: auto;
+  width: 71vw;
+  height: 40vw;
   border: 1px solid #000000;
   border-radius: 10px;
   box-shadow: 2px 5px 5px #888888;
@@ -90,15 +90,15 @@
 }
 
 .home-btn{
-  display:flex;
-  justify-content:"center";
-  width:0%;
-  background:#fff;
+  /* display:flex;
+  justify-content:"center"; */
+  position: absolute;
+  width:5vw;
   border-radius:10px;
   border:"1px solid #000";
-  color:cornflowerblue;
   cursor:"pointer";
-  text-decoration:none;
+  top: 5px;
+  left: 0px;
 }
 
 @media screen and (max-width:700px){
@@ -127,10 +127,10 @@
     margin: 0;
   }
   
-  #vid{
+  /* #vid{
     width:100%;
     height: auto;
-  }
+  } */
 
   .btn-section{
     flex-direction: column;

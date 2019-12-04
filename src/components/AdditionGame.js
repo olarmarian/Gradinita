@@ -2,6 +2,7 @@ import React, {useState,useEffect,useCallback} from 'react';
 //import logo from './logo.svg';
 import '../App.css';
 import '../AdditionGame.css';
+import {Button} from './Button';
 import urs1 from '../images/urs1.PNG';
 import urs2 from '../images/urs2.PNG';
 import urs3 from '../images/urs3.PNG';
@@ -120,6 +121,9 @@ export  class AdditionGame extends React.Component {
     render() {
         return (
             <div className="AdditionGame">
+             <div className="home-btn">
+            <Button  icon="fas fa-home" route="/"/>
+            </div>
                 <div className="results">
                 <h1><i class="fas fa-check" ></i>{this.state.scor}</h1>
                 <h1><i class="fas fa-times"></i>{this.state.gresele}</h1>
